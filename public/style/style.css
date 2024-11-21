@@ -1,11 +1,11 @@
-/* Reset básico para uma melhor consistência entre navegadores */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo global */
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -19,8 +19,7 @@ body {
     margin: 0;
 }
 
-/* Estilo do menu principal */
-/* Ajuste no menu */
+
 #menu {
     background: #ffffff;
     padding: 2rem;
@@ -29,8 +28,8 @@ body {
     max-width: 400px;
     width: 70%;
     margin-top: 20px;
-    margin-left: 2rem; /* Espaçamento à esquerda */
-    margin-right: 2rem; /* Espaçamento à esquerda */
+    margin-left: 2rem;
+    margin-right: 2rem; 
 }
 
 
@@ -41,7 +40,7 @@ body {
     color: #4facfe;
 }
 
-/* Estilização dos inputs e labels */
+
 input[type="radio"] {
     margin-right: 8px;
     accent-color: #4facfe;
@@ -56,7 +55,6 @@ label {
     margin-bottom: 1rem;
 }
 
-/* Estilo dos botões */
 button {
     background: #4facfe;
     color: #fff;
@@ -81,7 +79,6 @@ button:hover {
     background: #d32f2f;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     #menu {
         padding: 1.5rem;
@@ -101,8 +98,7 @@ button:hover {
     }
 }
 
-/* Seção de resposta */
-/* Estilização da seção de resposta */
+
 #res {
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +107,7 @@ button:hover {
     margin-top: 2rem;
 }
 
-/* Estilização dos cartões */
+
 #res div{
     background: #ffffff;
     border-radius: 8px;
@@ -126,7 +122,6 @@ button:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilização do texto dentro do cartão */
 #res div  h2 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
@@ -139,7 +134,6 @@ button:hover {
     color: #555;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     #res {
         flex-direction: column;
