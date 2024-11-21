@@ -1,0 +1,19 @@
+{
+  "name": "api-hospedes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/index.js"
+  },
+  "keywords": [],
+  "author": "Diego Melo",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "express": "^4.21.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
