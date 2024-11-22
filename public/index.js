@@ -18,7 +18,6 @@ btnHidden.addEventListener("click", function (event) {
   let quarto = document.getElementById("quarto").value;
   let data = document.getElementById("data").value;
   // console.log(name)
-  
 
   let body = {
     name: name,
@@ -106,8 +105,32 @@ function resposta() {
   //   alert(radioValue);
   if (radioValue == 1) {
     getAll();
-  } else {
+  } else if (radioValue == 2) {
     getQuartosDisponiveis();
+  } else if (radioValue == 3) {
+    let formHidden = document.getElementById("formHidden");
+
+    formHidden.style.display = "block";
+
+    btnHidden.addEventListener("click", function (event) {
+      event.preventDefault();
+      let name = document.getElementById("name").value;
+      let age = document.getElementById("age").value;
+      let cpf = document.getElementById("cpf").value;
+      let quarto = document.getElementById("quarto").value;
+      let data = document.getElementById("data").value;
+      // console.log(name)
+
+      let body = {
+        name: name,
+        age: age,
+        cpf: cpf,
+        quarto: quarto,
+        dataDeEntrada: data,
+      };
+
+      postNewHospede(body);
+    });
   }
 }
 

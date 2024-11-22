@@ -20,28 +20,31 @@
                 <input type="radio" name="input" id="option2" value="2">
                 <label for="option2">Mostrar Quartos Disponíveis</label>
                 <br>
+                <input type="radio" name="input" id="option3" value="3">
+                <label for="option3">Adicionar Hospede</label>
+                <br>
             </div>
             <button id="btn">Enviar</button>
             <button id="limpar">Limpar</button>
         </div>
-        <div class="formHidden">
-            <h1 for="input">Escolha 1 opção</h1>
+        <div id="formHidden">
+            <h1 for="input">Cadastro de Hospede</h1>
             <div>
                 <form>
                     <label for="name">Nome: </label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required>
                     <br>
                     <label for="age">Idade: </label>
-                    <input type="number" name="age" id="age">
+                    <input type="number" name="age" id="age" required>
                     <br>
-                    <label for="cpf">CPF: </label>
-                    <input type="text" name="cpf" id="cpf">
+                    <label for="cpf">CPF <span>(Apenas Números)</span>: </label>
+                    <input type="text" name="cpf" id="cpf" required>
                     <br>
                     <label for="quarto">Quarto: </label>
-                    <input type="number" name="quarto" id="quarto">
+                    <input type="number" name="quarto" id="quarto" required>
                     <br>
-                    <label for="data">Data de Entrada: </label>
-                    <input type="text" name="data" id="data">
+                    <label for="data">Data de Entrada <span>(101 - 120)</span>:  </label>
+                    <input type="text" name="data" id="data" required>
                     <br>
                     <input type="submit" value="Enviar" id="btnHidden">
                 </form>
