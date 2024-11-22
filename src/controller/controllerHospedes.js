@@ -73,6 +73,8 @@ export let verificateHospedesNewHospede = (pessoaReq) => {
     if (quarto.numero == pessoaReq.quarto) {
       if (quarto.disponivel == false) {
         verificarPessoa = false;
+      }else{
+        quarto.disponivel = false
       }
     }
   });

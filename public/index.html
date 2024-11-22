@@ -11,8 +11,8 @@
 
 <body>
     <div id="menu">
-        <h1 for="input">Escolha 1 opção</h1>
         <div class="form">
+            <h1 for="input">Escolha 1 opção</h1>
             <div>
                 <input type="radio" name="input" id="option1" value="1">
                 <label for="option1">Mostrar Todos os Hospedes</label>
@@ -23,6 +23,29 @@
             </div>
             <button id="btn">Enviar</button>
             <button id="limpar">Limpar</button>
+        </div>
+        <div class="formHidden">
+            <h1 for="input">Escolha 1 opção</h1>
+            <div>
+                <form>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="name" id="name">
+                    <br>
+                    <label for="age">Idade: </label>
+                    <input type="number" name="age" id="age">
+                    <br>
+                    <label for="cpf">CPF: </label>
+                    <input type="text" name="cpf" id="cpf">
+                    <br>
+                    <label for="quarto">Quarto: </label>
+                    <input type="number" name="quarto" id="quarto">
+                    <br>
+                    <label for="data">Data de Entrada: </label>
+                    <input type="text" name="data" id="data">
+                    <br>
+                    <input type="submit" value="Enviar" id="btnHidden">
+                </form>
+            </div>
         </div>
     </div>
     <br>

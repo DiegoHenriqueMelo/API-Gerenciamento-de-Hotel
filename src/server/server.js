@@ -47,6 +47,11 @@ export let startServer = () => {
     } else {
       res.json("ERROR[] NÃO foi possivel cadastrar usuario!");
     }
+
+    // const newPessoa = req.body;
+    // hospedes.push(newPessoa);
+    // res.status(200).json(hospedes);
+    // console.log("PESSOA CADASTRADA");
   });
 
   app.delete(Routes.deleteHospedeByQuarto, (req, res) => {
