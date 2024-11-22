@@ -21,7 +21,7 @@ export let verificateHospedesNewHospede = (pessoaReq) => {
   let digito1 = 0;
   let digito2 = 0;
 
-  let date = pessoaReq.dataDeEntraga.split("");
+  let date = pessoaReq.dataDeEntrada.split("");
   for (let i = 0; i < cpf.length; i++) {
     if (cpf[i] == "-" || cpf[i] == ".") {
       cpf.splice(i, 1);
@@ -64,7 +64,7 @@ export let verificateHospedesNewHospede = (pessoaReq) => {
   if (
     date[2] != "-" ||
     date[5] != "-" ||
-    pessoaReq.dataDeEntraga.length != 10
+    pessoaReq.dataDeEntrada.length != 10
   ) {
     verificarPessoa = false;
   }
