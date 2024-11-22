@@ -55,7 +55,8 @@ export let startServer = () => {
   });
 
   app.delete(Routes.deleteHospedeByQuarto, (req, res) => {
-    const { quarto } = req.params;
+    const { quarto } = req.body;
+    console.log(quarto)
 
     controllerHospedes.deleteHospede(quarto);
     if (controllerHospedes.verificarQuarto == true) {

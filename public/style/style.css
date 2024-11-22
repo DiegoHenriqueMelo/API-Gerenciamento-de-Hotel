@@ -80,7 +80,7 @@ span{
   font-weight: 600;
 }
 
-#formHidden {
+#formHidden, #formHiddenDelete {
   display: none;
 }
 

@@ -23,6 +23,9 @@
                 <input type="radio" name="input" id="option3" value="3">
                 <label for="option3">Adicionar Hospede</label>
                 <br>
+                <input type="radio" name="input" id="option4" value="4">
+                <label for="option4">Remover Hospede</label>
+                <br>
             </div>
             <button id="btn">Enviar</button>
             <button id="limpar">Limpar</button>
@@ -43,10 +46,22 @@
                     <label for="quarto">Quarto: </label>
                     <input type="number" name="quarto" id="quarto" required>
                     <br>
-                    <label for="data">Data de Entrada <span>(101 - 120)</span>:  </label>
+                    <label for="data">Data de Entrada <span>(101 - 120)</span>: </label>
                     <input type="text" name="data" id="data" required>
                     <br>
                     <input type="submit" value="Enviar" id="btnHidden">
+                </form>
+            </div>
+        </div>
+        <div id="formHiddenDelete">
+            <h1 for="input">Remover Hospede</h1>
+            <div>
+                <form>
+                    <label for="quartoDelete">Quarto: </label>
+                    <input type="number" name="quartoDelete" id="quartoDelete" required>
+                    <br>
+                    <input type="submit" value="Enviar" id="btnHiddenDelete">
+
                 </form>
             </div>
         </div>

@@ -1,10 +1,12 @@
 const URLgetAllHospedes = `http://localhost:3000/getAll`;
 const URLgetQuartosDisponiveis = `http://localhost:3000/getQuartosDisponiveis`;
 const URLpostNewHospede = `http://localhost:3000/addHospede`;
+const URLdeleteHospedeByQuarto = `http://localhost:3000/deleteHospedeByQuarto`;
 
 let res = document.getElementById("res");
 let btn = document.getElementById("btn");
 let btnHidden = document.getElementById("btnHidden");
+let btnHiddenDelete = document.getElementById("btnHiddenDelete");
 let btnLimpar = document.getElementById("limpar");
 
 btn.addEventListener("click", resposta);
@@ -29,6 +31,17 @@ btnHidden.addEventListener("click", function (event) {
 
   postNewHospede(body);
 });
+
+async function deleteHospede(body) {
+  let dados = body;
+  const response = await fetch(URLdeleteHospedeByQuarto, {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(dados),
+  });
+  const data = await response.json();
+  console.log(data);
+}
 
 async function postNewHospede(body) {
   let dados = body;
@@ -130,6 +143,20 @@ function resposta() {
       };
 
       postNewHospede(body);
+    });
+  } else {
+    let formHiddenDelete = document.getElementById("formHiddenDelete");
+
+    formHiddenDelete.style.display = "block";
+    btnHiddenDelete.addEventListener("click", function (event) {
+      event.preventDefault();
+      let quarto = document.getElementById("quartoDelete").value;
+
+      let body = {
+        quarto: quarto,
+      };
+
+      deleteHospede(body);
     });
   }
 }
