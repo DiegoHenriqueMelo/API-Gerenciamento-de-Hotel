@@ -29,6 +29,8 @@ body {
 
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -65,8 +67,6 @@ input[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-
-/* Hover no botão */
 input[type="submit"]:hover {
   background-color: #4facfe;
 }
